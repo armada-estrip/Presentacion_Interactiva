@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factores de Riesgo del Personal Militar en OMAI Ecuador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='none' stroke='%23FFD700' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/%3E%3C/svg%3E" alt="Ecuador Military">
+                <h3>OMAI Ecuador</h3>
+            </div>
+            <ul class="nav-menu">
+                <li><button class="nav-btn active" data-section="inicio">🏠 Inicio</button></li>
+                <li><button class="nav-btn" data-section="omai">📋 OMAI</button></li>
+                <li><button class="nav-btn" data-section="riesgos">⚠️ Factores de Riesgo</button></li>
+                <li><button class="nav-btn" data-section="psicosociales">🧠 Riesgos Psicosociales</button></li>
+                <li><button class="nav-btn" data-section="legal">⚖️ Marco Legal</button></li>
+                <li><button class="nav-btn" data-section="preventivas">🛡️ Acciones Preventivas</button></li>
+                <li><button class="nav-btn" data-section="conclusiones">📊 Conclusiones</button></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Inicio Section -->
+            <section id="inicio" class="section active">
+                <div class="hero-banner">
+                    <div class="hero-content">
+                        <h1>Factores de Riesgo del Personal Militar en OMAI Ecuador</h1>
+                        <p class="hero-subtitle">Acciones Preventivas enfocadas a los Derechos Humanos y Derecho Internacional Humanitario</p>
+                        <div class="hero-image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755217903/pplx_project_search_images/17a59c71c8c3cb2eab82d84c38f081379ec54683.png" alt="Capacitación militar en DDHH">
+                        </div>
+                        <button class="btn btn--primary btn--lg" onclick="navigateToSection('omai')">Comenzar Presentación</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OMAI Section -->
+            <section id="omai" class="section">
+                <div class="section-header">
+                    <h2>Operaciones Militares de Apoyo Institucional (OMAI)</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>¿Qué son las OMAI?</h3>
+                            <p>Las OMAI son operaciones ejecutadas por las Fuerzas Armadas ecuatorianas para apoyar a otras instituciones del Estado en el mantenimiento de la seguridad interna, control del crimen organizado y orden público.</p>
+                            <div class="highlight-box">
+                                <p><strong>Contexto:</strong> Desde 2010, Ecuador ha incrementado significativamente el uso de las FFAA en seguridad interna debido al aumento del narcotráfico y crimen organizado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Estadísticas 2023-2024</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">62,028</div>
+                                    <div class="stat-label">Operaciones militares de apoyo</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5,000</div>
+                                    <div class="stat-label">Reservistas incorporados</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">15%</div>
+                                    <div class="stat-label">Reducción homicidios</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card full-width">
+                        <div class="card__body">
+                            <h3>Tipos de OMAI</h3>
+                            <div class="omai-types">
+                                <div class="type-item">🔫 Control de armas, municiones y explosivos (CAMEX)</div>
+                                <div class="type-item">🏢 Apoyo a centros de rehabilitación social</div>
+                                <div class="type-item">🚫 Control de actividades ilícitas (minería, narcotráfico)</div>
+                                <div class="type-item">🆘 Apoyo en emergencias y desastres naturales</div>
+                                <div class="type-item">🏗️ Seguridad de infraestructura crítica</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="military-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217905/pplx_project_search_images/b07fee19c67157a3a3c14b0c096492b499f79c8b.png" alt="Personal militar ecuatoriano">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Factores de Riesgo Section -->
+            <section id="riesgos" class="section">
+                <div class="section-header">
+                    <h2>Factores de Riesgo del Personal Militar</h2>
+                </div>
+                <div class="risk-categories">
+                    <div class="card risk-card">
+                        <div class="card__body">
+                            <div class="risk-icon">⚠️</div>
+                            <h3>Riesgos Físicos</h3>
+                            <ul class="risk-list">
+                                <li>Exposición a violencia directa</li>
+                                <li>Riesgo de agresiones físicas</li>
+                                <li>Manejo de armas y explosivos</li>
+                                <li>Exposición a sustancias químicas</li>
+                                <li>Riesgos en operaciones nocturnas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card risk-card">
+                        <div class="card__body">
+                            <div class="risk-icon">🔧</div>
+                            <h3>Riesgos Operacionales</h3>
+                            <ul class="risk-list">
+                                <li>Falta de experiencia en seguridad interna</li>
+                                <li>Diferencias entre formación militar y policial</li>
+                                <li>Errores en procedimientos de seguridad</li>
+                                <li>Dificultad en manejo de crisis civiles</li>
+                                <li>Uso inadecuado de la fuerza</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card risk-card">
+                        <div class="card__body">
+                            <div class="risk-icon">🌍</div>
+                            <h3>Riesgos Ambientales</h3>
+                            <ul class="risk-list">
+                                <li>Trabajo en entornos hostiles</li>
+                                <li>Sobrepoblación carcelaria</li>
+                                <li>Condiciones laborales adversas</li>
+                                <li>Exposición prolongada a situaciones de alto riesgo</li>
+                                <li>Separación del núcleo familiar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="operation-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755217903/pplx_project_search_images/a662772aacb7bde88536eb8ff14cfe24234b9b60.png" alt="Operaciones militares en terreno">
+                </div>
+            </section>
+
+            <!-- Riesgos Psicosociales Section -->
+            <section id="psicosociales" class="section">
+                <div class="section-header">
+                    <h2>Riesgos Psicosociales y Salud Mental</h2>
+                </div>
+                <div class="psycho-content">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Factores Principales</h3>
+                            <div class="psycho-factors">
+                                <div class="factor-item">😰 Estrés crónico por exposición a violencia</div>
+                                <div class="factor-item">😟 Ansiedad por situaciones de alto riesgo</div>
+                                <div class="factor-item">😢 Depresión por separación familiar</div>
+                                <div class="factor-item">🔥 Burnout por sobrecarga laboral</div>
+                                <div class="factor-item">💭 Trastorno de estrés postraumático</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-card">
+                        <h3>Estadísticas de Salud Mental</h3>
+                        <div class="mental-stats">
+                            <div class="stat-box">
+                                <span class="stat-percentage">35%</span>
+                                <p>Incremento en consultas por salud mental durante COVID-19</p>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-percentage">57%</span>
+                                <p>Personal con problemas de participación/supervisión</p>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-percentage">38%</span>
+                                <p>Población en exposición continua a factores de riesgo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="consequences-card">
+                        <h3>Consecuencias</h3>
+                        <div class="consequences-grid">
+                            <div class="consequence-item">📉 Disminución del rendimiento laboral</div>
+                            <div class="consequence-item">❌ Aumento de errores operacionales</div>
+                            <div class="consequence-item">💔 Deterioro de relaciones interpersonales</div>
+                            <div class="consequence-item">🍺 Incremento en consumo de alcohol/drogas</div>
+                            <div class="consequence-item">⚠️ Ideación suicida en casos extremos</div>
+                        </div>
+                    </div>
+
+                    <div class="psycho-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217902/pplx_project_search_images/e1abb7ce50e396d84994c487fd353e0e55dd232a.png" alt="Factores psicosociales">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Marco Legal Section -->
+            <section id="legal" class="section">
+                <div class="section-header">
+                    <h2>Marco Legal: DDHH y DIH en Ecuador</h2>
+                </div>
+                <div class="legal-content">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Constitución del Ecuador</h3>
+                            <div class="constitution-text">
+                                <strong>Art. 158:</strong> Las FFAA protegen derechos, libertades y garantías de los ciudadanos
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="legal-grid">
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Leyes Nacionales</h3>
+                                <ul class="legal-list">
+                                    <li>Ley Orgánica de la Defensa Nacional</li>
+                                    <li>Ley de Seguridad Pública y del Estado</li>
+                                    <li>Manual de Protocolos en materia de DDHH y Género</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Tratados Internacionales</h3>
+                                <ul class="legal-list">
+                                    <li>Convenios de Ginebra de 1949</li>
+                                    <li>Protocolos adicionales de 1977</li>
+                                    <li>Estatuto de Roma (Corte Penal Internacional)</li>
+                                    <li>Convención contra la Tortura</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="principles-card">
+                        <h3>Principios Fundamentales</h3>
+                        <div class="principles-grid">
+                            <div class="principle-item">⚔️ Necesidad militar</div>
+                            <div class="principle-item">❤️ Humanidad</div>
+                            <div class="principle-item">🎯 Distinción</div>
+                            <div class="principle-item">⚖️ Proporcionalidad</div>
+                            <div class="principle-item">🛡️ Precaución</div>
+                        </div>
+                    </div>
+
+                    <div class="training-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217902/pplx_project_search_images/e28270550e2bb88836cb2383a04a8cd4b57f9473.png" alt="Capacitación en DIH">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Acciones Preventivas Section -->
+            <section id="preventivas" class="section">
+                <div class="section-header">
+                    <h2>Acciones Preventivas y Medidas de Protección</h2>
+                </div>
+                <div class="preventive-content">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>📚 Capacitación y Formación</h3>
+                            <ul class="preventive-list">
+                                <li>Capacitación continua en DDHH y DIH</li>
+                                <li>Cursos de uso progresivo de la fuerza</li>
+                                <li>Formación en manejo del estrés</li>
+                                <li>Entrenamiento en primeros auxilios psicológicos</li>
+                                <li>Seminarios sobre prevención de suicidio</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>📋 Protocolos</h3>
+                            <ul class="preventive-list">
+                                <li>Protocolos de denuncia de violaciones a DDHH</li>
+                                <li>Procedimientos de seguimiento psicológico</li>
+                                <li>Sistema de rotación de personal</li>
+                                <li>Evaluaciones médicas periódicas</li>
+                                <li>Programas de apoyo familiar</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>🏥 Sistemas de Apoyo</h3>
+                            <ul class="preventive-list">
+                                <li>Unidades de DDHH en cada fuerza</li>
+                                <li>Psicólogos especializados en FFAA</li>
+                                <li>Líneas telefónicas de emergencia psicológica</li>
+                                <li>Programas de reintegración post-servicio</li>
+                                <li>Convenios con instituciones de salud mental</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="group-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217905/pplx_project_search_images/553fb8ef7d3175bd11e731bf8c6a7e90d7549f06.png" alt="Personal militar en capacitación">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusiones Section -->
+            <section id="conclusiones" class="section">
+                <div class="section-header">
+                    <h2>Conclusiones y Recomendaciones</h2>
+                </div>
+                <div class="conclusions-content">
+                    <div class="recommendations-grid">
+                        <div class="card recommendation-card">
+                            <div class="card__body">
+                                <h3>🏛️ Institucionales</h3>
+                                <ul class="recommendation-list">
+                                    <li>Fortalecer la formación previa en OMAI</li>
+                                    <li>Implementar protocolos específicos de salud mental</li>
+                                    <li>Mejorar sistemas de rotación de personal</li>
+                                    <li>Aumentar presupuesto para apoyo psicológico</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card recommendation-card">
+                            <div class="card__body">
+                                <h3>⚙️ Operacionales</h3>
+                                <ul class="recommendation-list">
+                                    <li>Establecer límites claros en el uso de la fuerza</li>
+                                    <li>Implementar sistemas de supervisión continua</li>
+                                    <li>Crear mecanismos de retroalimentación</li>
+                                    <li>Desarrollar indicadores de riesgo psicosocial</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card recommendation-card">
+                            <div class="card__body">
+                                <h3>⚖️ Legales</h3>
+                                <ul class="recommendation-list">
+                                    <li>Actualizar normativas de DDHH para OMAI</li>
+                                    <li>Establecer responsabilidades claras</li>
+                                    <li>Crear mecanismos de rendición de cuentas</li>
+                                    <li>Fortalecer la cooperación interinstitucional</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="final-message">
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Mensaje Final</h3>
+                                <p>La protección del personal militar en operaciones OMAI requiere un enfoque integral que combine capacitación continua, apoyo psicológico, marcos legales sólidos y mecanismos efectivos de prevención. Solo así se pueden garantizar los derechos humanos y el cumplimiento del derecho internacional humanitario.</p>
+                                <button class="btn btn--primary" onclick="navigateToSection('inicio')">Volver al Inicio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
