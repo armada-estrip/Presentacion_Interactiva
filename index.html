@@ -3,310 +3,601 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factores de Riesgo del Personal Militar en OMAI Ecuador</title>
+    <title>Factores de Riesgo del Personal de las FF.AA. en las OMAI</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: white;">
     <div class="app-container">
         <!-- Navigation Sidebar -->
         <nav class="sidebar">
             <div class="sidebar-header">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='none' stroke='%23FFD700' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/%3E%3C/svg%3E" alt="Ecuador Military">
-                <h3>OMAI Ecuador</h3>
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1755221949/pplx_project_search_images/69f88a5b421109785f17a0e987f48dbd6a89edc1.png" alt="Armada del Ecuador" class="nav-emblem">
+                <div class="nav-title">
+                    <h3>Armada del Ecuador</h3>
+                    <p>Presentación Académica</p>
+                </div>
             </div>
             <ul class="nav-menu">
-                <li><button class="nav-btn active" data-section="inicio">🏠 Inicio</button></li>
-                <li><button class="nav-btn" data-section="omai">📋 OMAI</button></li>
-                <li><button class="nav-btn" data-section="riesgos">⚠️ Factores de Riesgo</button></li>
-                <li><button class="nav-btn" data-section="psicosociales">🧠 Riesgos Psicosociales</button></li>
-                <li><button class="nav-btn" data-section="legal">⚖️ Marco Legal</button></li>
-                <li><button class="nav-btn" data-section="preventivas">🛡️ Acciones Preventivas</button></li>
-                <li><button class="nav-btn" data-section="conclusiones">📊 Conclusiones</button></li>
+                <li><button class="nav-btn active" data-section="caratula">Presentación</button></li>
+                <li><button class="nav-btn" data-section="agenda">Agenda</button></li>
+                <li><button class="nav-btn" data-section="introduccion">Introducción</button></li>
+                <li><button class="nav-btn" data-section="desarrollo">Desarrollo</button></li>
+                <li><button class="nav-btn" data-section="conclusiones">Conclusiones</button></li>
+                <li><button class="nav-btn" data-section="bibliografia">Bibliografía</button></li>
             </ul>
         </nav>
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- Inicio Section -->
-            <section id="inicio" class="section active">
-                <div class="hero-banner">
-                    <div class="hero-content">
-                        <h1>Factores de Riesgo del Personal Militar en OMAI Ecuador</h1>
-                        <p class="hero-subtitle">Acciones Preventivas enfocadas a los Derechos Humanos y Derecho Internacional Humanitario</p>
-                        <div class="hero-image">
-                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755217903/pplx_project_search_images/17a59c71c8c3cb2eab82d84c38f081379ec54683.png" alt="Capacitación militar en DDHH">
-                        </div>
-                        <button class="btn btn--primary btn--lg" onclick="navigateToSection('omai')">Comenzar Presentación</button>
+            <!-- Carátula Section -->
+            <section id="caratula" class="section active">
+                <div class="cover-page">
+                    <div class="naval-background">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755221949/pplx_project_search_images/48094edf3201b035f776469ed0f4a515de1d78fb.png" alt="Escuadra Naval Ecuatoriana" class="background-fleet">
                     </div>
-                </div>
-            </section>
-
-            <!-- OMAI Section -->
-            <section id="omai" class="section">
-                <div class="section-header">
-                    <h2>Operaciones Militares de Apoyo Institucional (OMAI)</h2>
-                </div>
-                <div class="content-grid">
-                    <div class="card">
-                        <div class="card__body">
-                            <h3>¿Qué son las OMAI?</h3>
-                            <p>Las OMAI son operaciones ejecutadas por las Fuerzas Armadas ecuatorianas para apoyar a otras instituciones del Estado en el mantenimiento de la seguridad interna, control del crimen organizado y orden público.</p>
-                            <div class="highlight-box">
-                                <p><strong>Contexto:</strong> Desde 2010, Ecuador ha incrementado significativamente el uso de las FFAA en seguridad interna debido al aumento del narcotráfico y crimen organizado.</p>
+                    <div class="cover-content">
+                        <div class="institutional-header">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755221949/pplx_project_search_images/69f88a5b421109785f17a0e987f48dbd6a89edc1.png" alt="Escudo Armada del Ecuador" class="main-emblem">
+                            <div class="institution-names">
+                                <h1 class="institution-main">ARMADA DEL ECUADOR</h1>
+                                <h2 class="institution-school">ESCUELA DE PERFECCIONAMIENTO DE TRIPULANTES</h2>
+                                <h3 class="institution-dedication">"SUBP. GERARDO RAYMUNDO RAMÍREZ RAMBAY"</h3>
                             </div>
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755221950/pplx_project_search_images/912aec9ffe961591a9f0c6dd7fd71ae3111deba6.png" alt="Escuela de Perfeccionamiento" class="school-emblem">
                         </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card__body">
-                            <h3>Estadísticas 2023-2024</h3>
-                            <div class="stats-grid">
-                                <div class="stat-item">
-                                    <div class="stat-number">62,028</div>
-                                    <div class="stat-label">Operaciones militares de apoyo</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-number">5,000</div>
-                                    <div class="stat-label">Reservistas incorporados</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-number">15%</div>
-                                    <div class="stat-label">Reducción homicidios</div>
-                                </div>
-                            </div>
+
+                        <div class="thesis-title">
+                            <h2>FACTORES DE RIESGO QUE ENFRENTA EL PERSONAL MILITAR EN CUMPLIMIENTO A LAS OMAI Y LAS ACCIONES PREVENTIVAS ENFOCADO A LOS DERECHOS HUMANOS Y DERECHO INTERNACIONAL HUMANITARIO</h2>
                         </div>
-                    </div>
 
-                    <div class="card full-width">
-                        <div class="card__body">
-                            <h3>Tipos de OMAI</h3>
-                            <div class="omai-types">
-                                <div class="type-item">🔫 Control de armas, municiones y explosivos (CAMEX)</div>
-                                <div class="type-item">🏢 Apoyo a centros de rehabilitación social</div>
-                                <div class="type-item">🚫 Control de actividades ilícitas (minería, narcotráfico)</div>
-                                <div class="type-item">🆘 Apoyo en emergencias y desastres naturales</div>
-                                <div class="type-item">🏗️ Seguridad de infraestructura crítica</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="military-image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217905/pplx_project_search_images/b07fee19c67157a3a3c14b0c096492b499f79c8b.png" alt="Personal militar ecuatoriano">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Factores de Riesgo Section -->
-            <section id="riesgos" class="section">
-                <div class="section-header">
-                    <h2>Factores de Riesgo del Personal Militar</h2>
-                </div>
-                <div class="risk-categories">
-                    <div class="card risk-card">
-                        <div class="card__body">
-                            <div class="risk-icon">⚠️</div>
-                            <h3>Riesgos Físicos</h3>
-                            <ul class="risk-list">
-                                <li>Exposición a violencia directa</li>
-                                <li>Riesgo de agresiones físicas</li>
-                                <li>Manejo de armas y explosivos</li>
-                                <li>Exposición a sustancias químicas</li>
-                                <li>Riesgos en operaciones nocturnas</li>
+                        <div class="members-section">
+                            <h3>INTEGRANTES:</h3>
+                            <ul class="members-list">
+                                <li>CBOP-EL TROYA FRANCO JOHNNY AMANCIO</li>
+                                <li>CBOP-IM ARIAS ZAMBRANO JORGE LUIS</li>
+                                <li>CBOP-IF JUMBO VIVANCO PEDRO LUIS</li>
+                                <li>CBOP-CH ZAMBRANO ESPINOZA DARWIN RAMÓN</li>
                             </ul>
                         </div>
-                    </div>
 
-                    <div class="card risk-card">
-                        <div class="card__body">
-                            <div class="risk-icon">🔧</div>
-                            <h3>Riesgos Operacionales</h3>
-                            <ul class="risk-list">
-                                <li>Falta de experiencia en seguridad interna</li>
-                                <li>Diferencias entre formación militar y policial</li>
-                                <li>Errores en procedimientos de seguridad</li>
-                                <li>Dificultad en manejo de crisis civiles</li>
-                                <li>Uso inadecuado de la fuerza</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card risk-card">
-                        <div class="card__body">
-                            <div class="risk-icon">🌍</div>
-                            <h3>Riesgos Ambientales</h3>
-                            <ul class="risk-list">
-                                <li>Trabajo en entornos hostiles</li>
-                                <li>Sobrepoblación carcelaria</li>
-                                <li>Condiciones laborales adversas</li>
-                                <li>Exposición prolongada a situaciones de alto riesgo</li>
-                                <li>Separación del núcleo familiar</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="operation-image">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755217903/pplx_project_search_images/a662772aacb7bde88536eb8ff14cfe24234b9b60.png" alt="Operaciones militares en terreno">
-                </div>
-            </section>
-
-            <!-- Riesgos Psicosociales Section -->
-            <section id="psicosociales" class="section">
-                <div class="section-header">
-                    <h2>Riesgos Psicosociales y Salud Mental</h2>
-                </div>
-                <div class="psycho-content">
-                    <div class="card">
-                        <div class="card__body">
-                            <h3>Factores Principales</h3>
-                            <div class="psycho-factors">
-                                <div class="factor-item">😰 Estrés crónico por exposición a violencia</div>
-                                <div class="factor-item">😟 Ansiedad por situaciones de alto riesgo</div>
-                                <div class="factor-item">😢 Depresión por separación familiar</div>
-                                <div class="factor-item">🔥 Burnout por sobrecarga laboral</div>
-                                <div class="factor-item">💭 Trastorno de estrés postraumático</div>
+                        <div class="cover-footer">
+                            <div class="date-location">
+                                <p><strong>Agosto 2025</strong></p>
+                                <p>Ecuador</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="stats-card">
-                        <h3>Estadísticas de Salud Mental</h3>
-                        <div class="mental-stats">
-                            <div class="stat-box">
-                                <span class="stat-percentage">35%</span>
-                                <p>Incremento en consultas por salud mental durante COVID-19</p>
-                            </div>
-                            <div class="stat-box">
-                                <span class="stat-percentage">57%</span>
-                                <p>Personal con problemas de participación/supervisión</p>
-                            </div>
-                            <div class="stat-box">
-                                <span class="stat-percentage">38%</span>
-                                <p>Población en exposición continua a factores de riesgo</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="consequences-card">
-                        <h3>Consecuencias</h3>
-                        <div class="consequences-grid">
-                            <div class="consequence-item">📉 Disminución del rendimiento laboral</div>
-                            <div class="consequence-item">❌ Aumento de errores operacionales</div>
-                            <div class="consequence-item">💔 Deterioro de relaciones interpersonales</div>
-                            <div class="consequence-item">🍺 Incremento en consumo de alcohol/drogas</div>
-                            <div class="consequence-item">⚠️ Ideación suicida en casos extremos</div>
-                        </div>
-                    </div>
-
-                    <div class="psycho-image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217902/pplx_project_search_images/e1abb7ce50e396d84994c487fd353e0e55dd232a.png" alt="Factores psicosociales">
                     </div>
                 </div>
             </section>
 
-            <!-- Marco Legal Section -->
-            <section id="legal" class="section">
+            <!-- Agenda Section -->
+            <section id="agenda" class="section">
                 <div class="section-header">
-                    <h2>Marco Legal: DDHH y DIH en Ecuador</h2>
+                    <h2>AGENDA - TEMAS A DESARROLLAR</h2>
                 </div>
-                <div class="legal-content">
-                    <div class="card">
-                        <div class="card__body">
-                            <h3>Constitución del Ecuador</h3>
-                            <div class="constitution-text">
-                                <strong>Art. 158:</strong> Las FFAA protegen derechos, libertades y garantías de los ciudadanos
+                <div class="agenda-content">
+                    <div class="agenda-grid">
+                        
+                        <div class="agenda-item" data-section="introduccion">
+                            <div class="agenda-number">1</div>
+                            <div class="agenda-details">
+                                <h3>INTRODUCCIÓN</h3>
+                                <p>Contextualización, importancia y objetivos del estudio</p>
+                            </div>
+                        </div>
+
+                        <div class="agenda-item" data-section="desarrollo">
+                            <div class="agenda-number">2</div>
+                            <div class="agenda-details">
+                                <h3>DESARROLLO</h3>
+                                <div class="subtopics">
+                                    <div class="subtopic">Operaciones Militares de Apoyo Institucional (OMAI)</div>
+                                    <div class="subtopic">Factores de Riesgo del Personal de FF. AA.</div>
+                                    <div class="subtopic">Riesgos Psicosociales y de Salud Mental</div>
+                                    <div class="subtopic">Riesgos a la Salud y Enfermedades Ocupacionales</div>
+                                    <div class="subtopic">Marco Legal: Derechos Humanos y DIH</div>
+                                    <div class="subtopic">Acciones Preventivas y Medidas de Protección</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="agenda-item" data-section="conclusiones">
+                            <div class="agenda-number">3</div>
+                            <div class="agenda-details">
+                                <h3>CONCLUSIONES</h3>
+                                <p>Hallazgos y recomendaciones</p>
+                            </div>
+                        </div>
+
+                        <div class="agenda-item" data-section="bibliografia">
+                            <div class="agenda-number">4</div>
+                            <div class="agenda-details">
+                                <h3>BIBLIOGRAFÍA</h3>
+                                <p>Referencias académicas y fuentes oficiales</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="legal-grid">
-                        <div class="card">
+                    <div class="naval-image-agenda">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755221950/pplx_project_search_images/741dd14f5acb597188a2714f91d104e49b924529.png" alt="Buque Escuela Guayas" class="agenda-ship">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introducción Section -->
+            <section id="introduccion" class="section">
+                <div class="section-header">
+                    <h2>INTRODUCCIÓN</h2>
+                </div>
+                <div class="introduction-content">
+                    <div class="intro-main">
+                        <div class="card intro-card">
                             <div class="card__body">
-                                <h3>Leyes Nacionales</h3>
-                                <ul class="legal-list">
-                                    <li>Ley Orgánica de la Defensa Nacional</li>
-                                    <li>Ley de Seguridad Pública y del Estado</li>
-                                    <li>Manual de Protocolos en materia de DDHH y Género</li>
-                                </ul>
+                                <h3>Contexto</h3>
+								<p>Las OMAI <strong>son operaciones ejecutadas por las Fuerzas Armadas para apoyar a otras instituciones del Estado en el mantenimiento de la seguridad interna, control del crimen organizado y orden público</strong>, y representan una responsabilidad fundamental para la Armada.</p>
+
+								<p>Desde 2010, Ecuador ha incrementado significativamente el uso de las Fuerzas Armadas en seguridad interna, debido al aumento del narcotráfico y del crimen organizado, lo que hace que estas operaciones sean cada vez más complejas y exigentes, haciendo que el personal se enfrente a factores de riesgo únicos, los cuales requieren un análisis integral y la implementación de medidas preventivas específicas adaptadas a estos nuevos escenarios.</p>
+
                             </div>
                         </div>
 
-                        <div class="card">
+                      
+
+                        <div class="card intro-card">
                             <div class="card__body">
-                                <h3>Tratados Internacionales</h3>
-                                <ul class="legal-list">
-                                    <li>Convenios de Ginebra de 1949</li>
-                                    <li>Protocolos adicionales de 1977</li>
-                                    <li>Estatuto de Roma (Corte Penal Internacional)</li>
-                                    <li>Convención contra la Tortura</li>
-                                </ul>
+                                <h3>Objetivos de la Presentación</h3>
+                                <div class="objectives-grid">
+                                    <div class="objective-item">
+                                        <span class="objective-icon">🎯</span>
+                                        <span>Identificar los principales factores de riesgo del personal de la Armada en las OMAI</span>
+                                    </div>
+                                  
+                                    <div class="objective-item">
+                                        <span class="objective-icon">⚖️</span>
+                                        <span>Examinar el marco legal de DDHH y DIH aplicable</span>
+                                    </div>
+                                    <div class="objective-item">
+                                        <span class="objective-icon">🛡️</span>
+                                        <span>Evaluar las acciones preventivas para el personal</span>
+                                    </div>
+                                    <div class="objective-item">
+                                        <span class="objective-icon">📋</span>
+                                        <span>Proponer recomendaciones específicas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="justification-card">
+                            <div class="card">
+                                <div class="card__body">
+                                    <h3><p style="color: yellow;">Justificación del Estudio</p></h3>
+                                    <div class="justification-content">
+                                        <div class="justification-text">
+                                            <p><strong>La protección del personal </strong> y el cumplimiento de los estándares internacionales de derechos humanos son prioritarios para esta presentación.</p>
+                                            <p>El personal de las Fuerzas Armadas requiere consideraciones especiales al operar fuera de su entorno habitual, enfrentando nuevos desafíos que, si no se gestionan adecuadamente, pueden afectar su salud física y emocional, e incluso derivar en responsabilidades legales.</p>
+                                        </div>
+                                        <div class="justification-stats">
+                                            <div class="stat-highlight">
+												<div class="stat-number-intro">85</div>
+                                                <div class="stat-label">% Personal requirió capacitación</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="principles-card">
-                        <h3>Principios Fundamentales</h3>
-                        <div class="principles-grid">
-                            <div class="principle-item">⚔️ Necesidad militar</div>
-                            <div class="principle-item">❤️ Humanidad</div>
-                            <div class="principle-item">🎯 Distinción</div>
-                            <div class="principle-item">⚖️ Proporcionalidad</div>
-                            <div class="principle-item">🛡️ Precaución</div>
-                        </div>
-                    </div>
-
-                    <div class="training-image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217902/pplx_project_search_images/e28270550e2bb88836cb2383a04a8cd4b57f9473.png" alt="Capacitación en DIH">
+                    <div class="intro-naval-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217905/pplx_project_search_images/b07fee19c67157a3a3c14b0c096492b499f79c8b.png" alt="Buque de la Armada Ecuatoriana" class="intro-ship">
                     </div>
                 </div>
             </section>
 
-            <!-- Acciones Preventivas Section -->
-            <section id="preventivas" class="section">
+            <!-- Desarrollo Section -->
+            <section id="desarrollo" class="section">
                 <div class="section-header">
-                    <h2>Acciones Preventivas y Medidas de Protección</h2>
+                    <h2>DESARROLLO</h2>
                 </div>
-                <div class="preventive-content">
-                    <div class="card">
-                        <div class="card__body">
-                            <h3>📚 Capacitación y Formación</h3>
-                            <ul class="preventive-list">
-                                <li>Capacitación continua en DDHH y DIH</li>
-                                <li>Cursos de uso progresivo de la fuerza</li>
-                                <li>Formación en manejo del estrés</li>
-                                <li>Entrenamiento en primeros auxilios psicológicos</li>
-                                <li>Seminarios sobre prevención de suicidio</li>
-                            </ul>
+                <div class="desarrollo-content">
+                    <!-- 4.1 OMAI Naval -->
+                    <div class="development-subsection">
+                        <h3 class="subsection-title">Operaciones Militares de Apoyo Institucional</h3>
+                        <div class="subsection-content">
+                            <div class="card naval-omai-card">
+                                <div class="card__body">
+                                    <h4>Tipos de OMAI</h4>
+                                  
+                                    
+                                    <div class="naval-operations">
+                                        <div class="operation-type">
+                                            <span class="operation-icon">🔫</span>
+                                            <div class="operation-details">
+                                                <strong>Control de armas, municiones y explosivos (CAMEX)</strong>
+                                             
+                                            </div>
+                                        </div>
+                                        <div class="operation-type">
+                                            <span class="operation-icon">🏢</span>
+                                            <div class="operation-details">
+                                                <strong>Apoyo a centros de rehabilitación social</strong>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="operation-type">
+                                            <span class="operation-icon">🚫</span>
+                                            <div class="operation-details">
+                                                <strong>Control de actividades ilícitas (minería, narcotráfico)</strong>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="operation-type">
+                                            <span class="operation-icon">🆘</span>
+                                            <div class="operation-details">
+                                                <strong>Apoyo en emergencias y desastres naturales</strong>
+                                                
+                                            </div>
+                                        </div>
+										<div class="operation-type">
+                                            <span class="operation-icon">🏗️</span>
+                                            <div class="operation-details">
+                                                <strong>Seguridad de infraestructura crítica</strong>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="naval-stats-card">
+                                <div class="card">
+                                    <div class="card__body">
+                                        <h4>Estadísticas FF. AA. 2023-2024</h4>
+                                        <div class="naval-stats-grid">
+                                            <div class="naval-stat">
+                                                <div class="stat-number-naval">62.028</div>
+                                                <div class="stat-label">Operaciones militares de apoyo</div>
+                                            </div>
+                                            <div class="naval-stat">
+                                                <div class="stat-number-naval">5000</div>
+                                                <div class="stat-label">Reservistas incorporados</div>
+                                            </div>
+                                            <div class="naval-stat">
+                                                <div class="stat-percentage-naval">15</div>
+                                                <div class="stat-label">Reducción tasa de homicidios</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card__body">
-                            <h3>📋 Protocolos</h3>
-                            <ul class="preventive-list">
-                                <li>Protocolos de denuncia de violaciones a DDHH</li>
-                                <li>Procedimientos de seguimiento psicológico</li>
-                                <li>Sistema de rotación de personal</li>
-                                <li>Evaluaciones médicas periódicas</li>
-                                <li>Programas de apoyo familiar</li>
-                            </ul>
+                    <!-- 4.2 Factores de Riesgo Naval -->
+                    <div class="development-subsection">
+                        <h3 class="subsection-title">Factores de Riesgo del Personal</h3>
+                        <div class="subsection-content">
+                            <div class="naval-risks-grid">
+                                <div class="card naval-risk-card physical-risks">
+                                    <div class="card__body">
+                                        <div class="risk-category-header">
+                                            <span class="risk-icon">⚠️</span>
+                                            <h4>Riesgos Físicos</h4>
+                                        </div>
+                                        <ul class="naval-risk-list">
+                                            <li>Exposición a violencia directa</li>
+                                            <li>Riesgo de agresiones físicas</li>
+                                            <li>Manejo de armas y explosivos</li>
+                                            <li>Exposición a sustancias químicas</li>
+                                            <li>Riesgos a caídas en operaciones nocturnas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="card naval-risk-card operational-risks">
+                                    <div class="card__body">
+                                        <div class="risk-category-header">
+                                            <span class="risk-icon">⚙️</span>
+                                            <h4>Riesgos Operacionales</h4>
+                                        </div>
+                                        <ul class="naval-risk-list">
+                                            <li>Falta de experiencia en seguridad interna</li>
+                                            <li>Diferencias entre formación militar y policial</li>
+                                            <li>Errores en procedimientos de seguridad</li>
+                                            <li>Dificultad en manejo de crisis civiles</li>
+                                            <li>Uso inadecuado de la fuerza</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="card naval-risk-card environmental-risks">
+                                    <div class="card__body">
+                                        <div class="risk-category-header">
+                                            <span class="risk-icon">🌊</span>
+                                            <h4>Riesgos Ambientales</h4>
+                                        </div>
+                                        <ul class="naval-risk-list">
+                                            <li>Trabajo en entornos hostiles</li>
+                                            <li>Sobrepoblación carcelaria</li>
+                                            <li>Condiciones laborales adversas</li>
+                                            <li>Exposición prolongada a situaciones de alto riesgo</li>
+                                            <li>Separación del núcleo familiar</li>
+											<li>Infección o propagación de enfermedades</li>
+											
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="naval-operation-image">
+                                <img src="https://pplx-res.cloudinary.com/image/upload/v1755221949/pplx_project_search_images/71847e19a7003ae46cb90518dcd31216781b76a9.png" alt="Personal naval en operaciones" class="operation-img">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card__body">
-                            <h3>🏥 Sistemas de Apoyo</h3>
-                            <ul class="preventive-list">
-                                <li>Unidades de DDHH en cada fuerza</li>
-                                <li>Psicólogos especializados en FFAA</li>
-                                <li>Líneas telefónicas de emergencia psicológica</li>
-                                <li>Programas de reintegración post-servicio</li>
-                                <li>Convenios con instituciones de salud mental</li>
-                            </ul>
+                    <!-- 4.3 Riesgos Psicosociales Navales -->
+                    <div class="development-subsection">
+                        <h3 class="subsection-title">Riesgos Psicosociales y de Salud Mental del Personal</h3>
+                        <div class="subsection-content">
+                            <div class="naval-psycho-content">
+                                <div class="card naval-psycho-main">
+                                    <div class="card__body">
+                                        <h4>Factores</h4>
+                                        <div class="naval-psycho-factors">
+                                            <div class="psycho-factor-naval">
+                                                <span class="psycho-icon">😰</span>
+                                                <div class="factor-content">
+                                                    <strong>Estrés crónico por exposición a violencia</strong>
+                                               
+                                                </div>
+                                            </div>
+                                            <div class="psycho-factor-naval">
+                                                <span class="psycho-icon">😟</span>
+                                                <div class="factor-content">
+                                                    <strong>Ansiedad por situaciones de alto riesgo</strong>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="psycho-factor-naval">
+                                                <span class="psycho-icon">😢 </span>
+                                                <div class="factor-content">
+                                                    <strong>Depresión por separación familiar</strong>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="psycho-factor-naval">
+                                                <span class="psycho-icon">🔥 </span>
+                                                <div class="factor-content">
+                                                    <strong>Burnout por sobrecarga laboral</strong>
+                                                   
+                                                </div>
+											</div>
+											<div class="psycho-factor-naval">
+                                                <span class="psycho-icon">💭  </span>
+                                                <div class="factor-content">
+                                                    <strong>Trastorno de estrés postraumático</strong>
+                                                </div>
+                                            </div>	
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="naval-mental-stats">
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h4>Estadísticas de Salud Mental</h4>
+                                            
+											<div class="mental-stats-naval">
+                                                <div class="mental-stat-naval">
+                                                    <div class="stat-percentage-naval">35%</div>
+                                                    <p>Incremento en consultas por salud mental durante COVID-19</p>
+                                                </div>
+                                                <div class="mental-stat-naval">
+                                                    <div class="stat-percentage-naval">57%</div>
+                                                    <p>Personal con problemas de participación/supervisión</p>
+                                                </div>
+                                                <div class="mental-stat-naval">
+                                                    <div class="stat-percentage-naval">38%</div>
+                                                    <p>Personal en exposición continua a factores de riesgo</p>
+                                                </div>
+                                            </div>
+								        </div>
+                                    </div>
+                                </div>
+								
+								
+								
+								<div class="card naval-risk-card operational-risks">
+                                    <div class="card__body">
+                                        <div class="risk-category-header">
+                                            <span class="risk-icon">⚙️</span>
+                                            <h4>CONSECUENCIAS</h4>
+                                        </div>
+                                        <ul class="naval-risk-list">
+                                            <li>📉 Disminución del rendimiento laboral</li>
+                                            <li>❌ Aumento de errores operacionales</li>
+                                            <li>💔 Deterioro de relaciones interpersonales</li>
+                                            <li>🍺 Incremento en consumo de alcohol/drogas</li>
+											<li>❌ Uso inadecuado y desproporcional de la Fuerza</li>
+											<li>⚠️ Existe mucho personal que desea retirarse de la Institución</li>
+                                        </ul>
+                                    </div>
+                                </div>
+								
+								
+								
+								
+								
+                            </div>
                         </div>
                     </div>
 
-                    <div class="group-image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755217905/pplx_project_search_images/553fb8ef7d3175bd11e731bf8c6a7e90d7549f06.png" alt="Personal militar en capacitación">
+                    <!-- 4.4 Riesgos de Salud Naval -->
+                    <div class="development-subsection">
+                        <h3 class="subsection-title">Riesgos a la Salud y Enfermedades Ocupacionales</h3>
+                        <div class="subsection-content">
+                            <div class="naval-health-content">
+                                <div class="card tuberculosis-naval-card">
+                                    <div class="card__body">
+                                        <h4>🦠 Tuberculosis: Un riesgo ocupacional </h4>
+                                        <p class="tb-naval-description">La tuberculosis representa un riesgo ocupacional latente para el personal militar, especialmente en operaciones de apoyo en centros penitenciarios.</p>
+                                        
+                                        
+										
+										<div class="naval-mental-stats">
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h4>Estadísticas de Salud Mental Naval</h4>
+                                            <div class="mental-stats-naval">
+                                                <div class="mental-stat-naval">
+                                                    <div class="stat-number-naval">8,400</div>
+                                                    <p>Casos nuevos estimados por OMS para Ecuador 2025</p>
+                                                </div>
+                                                <div class="mental-stat-naval">
+                                                    <div class="stat-number-naval">1,131</div>
+                                                    <p>PPL en tratamiento para TB</p>
+                                                </div>
+                                                <div class="mental-stat-naval">
+                                                    <div class="stat-number-naval">174</div>
+                                                    <p>Nuevos casos en CPL durante 2025</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+										
+										
+									
+										
+                                    </div>
+                                </div>
+
+                                <div class="naval-diseases-grid">
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h4>Factores de Riesgo de Tuberculosis</h4>
+                                            <div class="naval-diseases-list">
+                                                <div class="disease-naval-item">
+                                                    <span class="disease-icon">🏢</span>
+                                                    <span>Control en centros penitenciarios hacinados</span>
+                                                </div>
+                                                <div class="disease-naval-item">
+                                                    <span class="disease-icon">🔄</span>
+                                                    <span>Exposición prolongada a pacientes con TB</span>
+                                                </div>
+                                                <div class="disease-naval-item">
+                                                    <span class="disease-icon">🛡️</span>
+                                                    <span>Falta de medidas de bioseguridad adecuadas</span>
+                                                </div>
+                                                <div class="disease-naval-item">
+                                                    <span class="disease-icon">💨</span>
+                                                    <span>Condiciones de ventilación deficiente</span>
+                                                </div>
+                                                <div class="disease-naval-item">
+                                                    <span class="disease-icon">🦠</span>
+                                                    <span>Contacto directo con población vulnerable</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h4>Medidas Preventivas</h4>
+                                            <ul class="prevention-naval-list">
+                                                <li>Uso obligatorio de equipo de protección personal</li>
+                                                <li>Exámenes médicos pre-ocupacionales y periódicos</li>
+                                                <li>Capacitación en normas de bioseguridad</li>
+                                                <li>Vacunación según protocolos establecidos</li>
+                                                <li>Rotación programada del personal expuesto</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4.5 Marco Legal -->
+                    <div class="development-subsection">
+                        <h3 class="subsection-title">Marco Legal: Derechos Humanos y DIH para Personal militar</h3>
+                        <div class="subsection-content">
+                            <div class="naval-legal-content">
+                                <div class="card constitution-naval-card">
+                                    <div class="card__body">
+                                        <h4>Base Constitucional</h4>
+                                        <div class="constitution-naval-text">
+                                            <strong>Art. 158 Constitución del Ecuador:</strong> Las Fuerzas Armadas, incluyendo la Armada del Ecuador, protegen derechos, libertades y garantías de los ciudadanos
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="naval-legal-grid">
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h4>Leyes Nacionales</h4>
+                                            <ul class="legal-naval-list">
+                                                <li>Ley Orgánica de la Defensa Nacional</li>
+                                                <li>Ley de Seguridad Pública y del Estado</li>
+                                                <li>Reglamento de Disciplina Militar de las FF.AA. </li>
+                                                <li>Ley Orgánica que regula el Uso Legítimo de la Fuerza</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h4>Tratados Internacionales</h4>
+                                            <ul class="legal-naval-list">
+                                                <li>Convenios de Ginebra (1949)</li>
+                                                <li>Protocolos Adicionales (1977)</li>
+                                                <li>Estatuto de Roma</li>
+                                                <li>Convención contra la Tortura</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4.6 Acciones Preventivas -->
+                    <div class="development-subsection">
+                        <h3 class="subsection-title">Acciones Preventivas y Medidas de Protección</h3>
+                        <div class="subsection-content">
+                            <div class="naval-preventive-content">
+                                <div class="card">
+                                    <div class="card__body">
+                                        <h4>📚 Capacitación y Formación</h4>
+                                        <ul class="preventive-naval-list">
+                                            <li>Capacitación continua en DDHH y DIH (94% personal capacitado)</li>
+                                            <li>Cumplir con capacitación del Uso Progresivo de la Fuerza</li>
+                                            <li>Formación en manejo del estrés</li>
+                                            <li>Entrenamiento en primeros auxilios psicológicos</li>
+                                            <li>Charlas de motivación y pertenencia a la Institución</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__body">
+                                        <h4> Protocolos</h4>
+                                        <ul class="preventive-naval-list">
+                                            <li>Protocolos de denuncia de violaciones a DD.HH.</li>
+                                            <li>Procedimientos de seguimiento psicológico</li>
+                                            <li>Sistema de rotación de personal</li>
+                                            <li>Evaluaciones médicas periódicas</li>
+                                            <li>Programas de apoyo </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -314,56 +605,192 @@
             <!-- Conclusiones Section -->
             <section id="conclusiones" class="section">
                 <div class="section-header">
-                    <h2>Conclusiones y Recomendaciones</h2>
+                    <h2>CONCLUSIONES Y RECOMENDACIONES</h2>
                 </div>
                 <div class="conclusions-content">
-                    <div class="recommendations-grid">
-                        <div class="card recommendation-card">
+                    <div class="main-findings-naval">
+                        <div class="card">
                             <div class="card__body">
-                                <h3>🏛️ Institucionales</h3>
-                                <ul class="recommendation-list">
-                                    <li>Fortalecer la formación previa en OMAI</li>
-                                    <li>Implementar protocolos específicos de salud mental</li>
+                                <h3>📊 Principales Hallazgos</h3>
+                                <div class="findings-grid">
+                                    <div class="finding-item">
+                                        <span class="finding-icon">⚓</span>
+                                        <p>Las OMAI se han convertido en una herramienta clave para enfrentar amenazas como el narcotráfico, la violencia y la inseguridad interna.</p>
+                                    </div>
+                                    <div class="finding-item">
+                                        <span class="finding-icon">⚓</span>
+                                        <p>El personal militar enfrenta riesgos físicos, operacionales, ambientales, psicosociales y de salud, que van desde la exposición directa a la violencia hasta enfermedades ocupacionales como la tuberculosis.</p>
+                                    </div>
+									<div class="finding-item">
+                                        <span class="finding-icon">⚓</span>
+                                        <p>La Constitución, la normativa nacional y los tratados internacionales proporcionan un marco sólido que obliga a las Fuerzas Armadas a actuar respetando los Derechos Humanos y el DIH.</p>
+                                    </div>
+									<div class="finding-item">
+                                        <span class="finding-icon">⚓</span>
+                                        <p>La capacitación continua, la formación en DD.HH. y DIH, los protocolos de bioseguridad y los mecanismos de apoyo psicológico constituyen pilares fundamentales para reducir los riesgos y proteger al personal.</p>
+                                    </div>
+									<div class="finding-item">
+                                        <span class="finding-icon">⚓</span>
+                                        <p>Las FF. AA. no solo deben garantizar la eficacia de las operaciones, sino también la protección integral de quienes las ejecutan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="naval-recommendations-grid">
+                        <div class="card naval-recommendation-card">
+                            <div class="card__body">
+                                <h4>⚓ Recomendaciones Institucionales</h4>
+                                <ul class="naval-recommendation-list">
+                                    <li>Fortalecer la formación previa especializada en OMAI</li>
+                                    <li>Implementar protocolos de salud mental</li>
                                     <li>Mejorar sistemas de rotación de personal</li>
-                                    <li>Aumentar presupuesto para apoyo psicológico</li>
+                                    <li>Aumentar presupuesto para apoyo psicológico y médico</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="card recommendation-card">
+                        <div class="card naval-recommendation-card">
                             <div class="card__body">
-                                <h3>⚙️ Operacionales</h3>
-                                <ul class="recommendation-list">
+                                <h4>⚙️ Operacionales</h4>
+                                <ul class="naval-recommendation-list">
                                     <li>Establecer límites claros en el uso de la fuerza</li>
                                     <li>Implementar sistemas de supervisión continua</li>
                                     <li>Crear mecanismos de retroalimentación</li>
                                     <li>Desarrollar indicadores de riesgo psicosocial</li>
+                                
                                 </ul>
                             </div>
                         </div>
-
-                        <div class="card recommendation-card">
+						
+						<div class="card naval-recommendation-card">
                             <div class="card__body">
-                                <h3>⚖️ Legales</h3>
-                                <ul class="recommendation-list">
-                                    <li>Actualizar normativas de DDHH para OMAI</li>
-                                    <li>Establecer responsabilidades claras</li>
-                                    <li>Crear mecanismos de rendición de cuentas</li>
-                                    <li>Fortalecer la cooperación interinstitucional</li>
+                                <h4>🏥 Salud</h4>
+                                <ul class="naval-recommendation-list">
+                                    <li>Reforzar medidas de bioseguridad en operaciones</li>
+                                    <li>Implementar programas de vigilancia epidemiológica</li>
+                                    <li>Mejorar condiciones de ventilación en espacios de trabajo</li>
+                                
                                 </ul>
                             </div>
                         </div>
+						
+						<div class="card naval-recommendation-card">
+                            <div class="card__body">
+                                <h4>⚖️ Legales</h4>
+                                <ul class="naval-recommendation-list">
+                                    <li>Fortalecer y continuar las normativas de DD.HH. y DIH para OMAI</li>
+                                    
+                                
+                                </ul>
+                            </div>
+                        </div>
+                      
                     </div>
 
-                    <div class="final-message">
+                    <div class="final-naval-message">
                         <div class="card">
                             <div class="card__body">
                                 <h3>Mensaje Final</h3>
-                                <p>La protección del personal militar en operaciones OMAI requiere un enfoque integral que combine capacitación continua, apoyo psicológico, marcos legales sólidos y mecanismos efectivos de prevención. Solo así se pueden garantizar los derechos humanos y el cumplimiento del derecho internacional humanitario.</p>
-                                <button class="btn btn--primary" onclick="navigateToSection('inicio')">Volver al Inicio</button>
+                                <p>Las <strong>FF. AA.</strong> están comprometidas con la protección integral de su personal en las OMAI, la implementación de estas recomendaciones fortalecerá la capacidad operacional mientras garantiza el respeto a los DD. HH. y el cumplimiento del DIH.</p>
+                                <div class="naval-emblem-final">
+                                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755221949/pplx_project_search_images/69f88a5b421109785f17a0e987f48dbd6a89edc1.png" alt="Emblem Armada del Ecuador" class="final-emblem">
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Bibliografía Section -->
+            <section id="bibliografia" class="section">
+                <div class="section-header">
+                    <h2>BIBLIOGRAFÍA Y REFERENCIAS</h2>
+                </div>
+                <div class="bibliography-content">
+                    <div class="card bibliography-section">
+                        <div class="card__body">
+                            <h3>📋 Documentos Oficiales de la Armada del Ecuador</h3>
+                            <div class="reference-list">
+                                <div class="reference-item">
+                                    <div class="reference-title">Reglamento de Disciplina de la Armada del Ecuador</div>
+                                    <div class="reference-author">Comando General de la Armada</div>
+                                    <div class="reference-year">2024</div>
+                                    <div class="reference-institution">Armada del Ecuador</div>
+                                </div>
+                                <div class="reference-item">
+                                    <div class="reference-title">Plan Estratégico Institucional de la Armada 2021-2025</div>
+                                    <div class="reference-author">Armada del Ecuador</div>
+                                    <div class="reference-year">2021</div>
+                                    <div class="reference-institution">Comando General de la Armada</div>
+                                </div>
+                                <div class="reference-item">
+                                    <div class="reference-title">Manual de Protocolos en materia de Derechos Humanos y de Género en las Fuerzas Armadas</div>
+                                    <div class="reference-author">Ministerio de Defensa Nacional del Ecuador</div>
+                                    <div class="reference-year">2013</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bibliography-section">
+                        <div class="card__body">
+                            <h3>🎓 Fuentes Académicas</h3>
+                            <div class="reference-list">
+                                <div class="reference-item">
+                                    <div class="reference-title">Impacto psicológico generado en el personal militar en los grados de tropa</div>
+                                    <div class="reference-author">Universidad de las Américas</div>
+                                    <div class="reference-year">2024</div>
+                                    <div class="reference-type">Tesis de Maestría</div>
+                                </div>
+                                <div class="reference-item">
+                                    <div class="reference-title">Manual de Seguridad y Salud Ocupacional para las Fuerzas Armadas</div>
+                                    <div class="reference-author">Jimmy Xavier Guanopatín Matute</div>
+                                    <div class="reference-institution">Universidad Internacional SEK</div>
+                                    <div class="reference-year">2018</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bibliography-section">
+                        <div class="card__body">
+                            <h3>🏥 Documentos de Salud</h3>
+                            <div class="reference-list">
+                                <div class="reference-item">
+                                    <div class="reference-title">Guía de Práctica Clínica: Prevención y control de tuberculosis</div>
+                                    <div class="reference-author">Ministerio de Salud Pública del Ecuador</div>
+                                    <div class="reference-year">2018</div>
+                                </div>
+                                <div class="reference-item">
+                                    <div class="reference-title">Campaña de Prevención de Tuberculosis</div>
+                                    <div class="reference-author">Fuerza Aérea Ecuatoriana</div>
+                                    <div class="reference-year">2025</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bibliography-section">
+                        <div class="card__body">
+                            <h3>⚖️ Marco Legal</h3>
+                            <div class="reference-list">
+                                <div class="reference-item">
+                                    <div class="reference-title">Constitución de la República del Ecuador</div>
+                                    <div class="reference-year">2008</div>
+                                    <div class="reference-note">Artículo 158</div>
+                                </div>
+                                <div class="reference-item">
+                                    <div class="reference-title">Convenios de Ginebra y Protocolos Adicionales</div>
+                                    <div class="reference-author">Comité Internacional de la Cruz Roja</div>
+                                    <div class="reference-year">1949-1977</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </section>
         </main>
